@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+section {
+    padding: 5em 2em; 
+}
+
+/* ff= font family, fw- font weight, clr- color, fs=font size*/
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-seconday: 'Source Code Pro', monospace;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-pink: hsl(300, 87%, 97%);
+    --clr-light: white;
+    --clr-grey: rgb(126, 111, 140);
+    --clr-accent: rgb(101, 14, 120);
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+.upper_half {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Header Section */
+header {
+    display: block;
+    flex-wrap: wrap;
+    max-width: 660px;
+    /*the padding below is to help on smaller screens so the content isn't touching the sides*/
+    padding: 5em 8em;
+}
+
+h1 {
+    color: var(--clr-accent);
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h1);
+   
+}
+
+.main_description {
+    color: var(--clr-grey);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 20px;
+    margin: 0;
+    min-width: 300px;
+}
+
+
+/* Star rating section */
+
+.rating_section {
+    padding: 5em 1em;
+    width: 550px;
+    margin: 0;
+}
+
+.rating_top,
+.rating_middle,
+.rating_bottom {
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--clr-pink);
+    border-radius: 10px;
+    color: var(--clr-accent);
+    margin-top: 15px;
+    padding: .5em 2em;
+    align-items: center;
+    line-height: 3px;
+    min-width: 200px;
+    max-width: 500px;
+}
+
+.rating_middle {
+    margin-left: 2em;
+    
+}
+
+.rating_bottom {
+    margin-left: 4em;
+}
+
+.star_div {
+    margin-right: 30px;
+}
+
+.rating_individual h3 {
+    font-size: var(--fs-body);
+}
+
+.rating_description {
+    font-size: var(--fs-body);
+}
+
+
+/*  */
