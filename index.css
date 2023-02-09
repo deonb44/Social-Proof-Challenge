@@ -62,8 +62,10 @@ h1 {
 
 .rating_section {
     padding: 5em 1em;
-    width: 550px;
+    min-width: 550px;
     margin: 0;
+    border: solid red;
+    position: relative;
 }
 
 .rating_top,
@@ -82,14 +84,14 @@ h1 {
     max-width: 500px;
 }
 
-.rating_middle {
+/* .rating_middle {
     margin-left: 2em;
     
 }
 
 .rating_bottom {
     margin-left: 4em;
-}
+} */
 
 .star_div {
     margin-right: 30px;
@@ -104,4 +106,48 @@ h1 {
 }
 
 
-/*  */
+/* Personal Review section */
+
+.people_reviews {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.reviewer_name, .testimony {
+    color: white;
+}
+
+.testimony {
+    line-height: 25px;
+}
+
+.verify {
+    color: rgb(171, 61, 80);
+}
+
+.first_review,
+.second_review,
+.third_review {
+    background: var(--clr-accent);
+    border-radius: 10px;
+    margin-left: 20px;
+    padding: 1em 1em;
+    max-width: 320px;
+}
+
+
+
+.reviewers_info {
+    line-height: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 250px;
+    text-align: left;
+}
+
+.review_pic {
+    border-radius: 50%;
+    max-height: 55px;
+    margin-right: 15px;;
+}
