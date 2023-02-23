@@ -23,7 +23,7 @@ section {
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
+    --fs-h3: .93rem;
     --fs-body: 15px;
     --fs-description: 18px;
 }
@@ -52,7 +52,7 @@ header {
 @media (min-width: 800px) {
     header {
         margin-right: 200px;
-        padding-right: 100px;
+        padding-right: 90px;
     }
 }
 
@@ -91,7 +91,7 @@ h3 {
 .rating_top,
 .rating_middle,
 .rating_bottom {
-    display: flex;
+    display: block;
     justify-content: space-center;
     background: var(--clr-lightgrey);
     border-radius: 10px;
@@ -108,7 +108,9 @@ h3 {
 
 
 .star_div {
-    margin-right: 30px;
+    margin: 0 auto;
+    display: block;
+    width: 40%;
     
 }
 
@@ -117,11 +119,24 @@ h3 {
 }
 
 .rating_description {
-    font-size: var(--fs-body);
-    
+    font-size: var(--fs-h3);
+    margin: 0 auto;
+    width: 80%;
    
 }
+
+.star_rating {
+    width: 16%;
+}
+
 @media (min-width: 760px) {
+    .rating_top,
+    .rating_middle,
+    .rating_bottom {
+    display: flex;
+    justify-content: space-around;
+    flex-shrink: 2;
+}
     .rating_middle {
         transform: translateX(10%);
         
@@ -129,6 +144,17 @@ h3 {
     
     .rating_bottom {
         transform: translateX(20%);
+    }
+
+    .star_div {
+        
+        width: 37%;
+        margin-right: 1em;
+    }
+    .rating_description {
+      margin-left: 1em;
+      padding-right: 0;
+      padding-left: 0;
     }
 }
 
