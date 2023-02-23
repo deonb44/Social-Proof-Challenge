@@ -23,7 +23,7 @@ section {
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
-    --fs-h3: .93rem;
+    --fs-h3: .90rem;
     --fs-body: 15px;
     --fs-description: 18px;
 }
@@ -126,7 +126,7 @@ h3 {
 }
 
 .star_rating {
-    width: 16%;
+    width: 15%;
 }
 
 @media (min-width: 760px) {
